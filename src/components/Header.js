@@ -6,7 +6,7 @@ const Header = props => {
 		<header>
 			<div className="header-inner-container">
 				<div className="header-text-container">
-					<h1>Public API Demo</h1>
+					<h1>React API -> UI Demo</h1>
 				</div>
 				<SearchForm data={ props.data } />
 			</div>

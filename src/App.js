@@ -20,10 +20,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className="container">
         <Header data={ this.state.employees } />
         <CardGallery data={ this.state.employees } />
-      </React.Fragment>
+      </div>
     );
   }
 }
