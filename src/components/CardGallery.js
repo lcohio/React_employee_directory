@@ -2,17 +2,20 @@ import React, { Component } from "react"
 
 export default class CardGallery extends Component {
 
-	state = {
-		modalRequest: false,
-		modalData: [],
-		currentIndex: ''
+	constructor(props) {
+		super(props)
+		this.state = {
+			modalRequest: false,
+			modalData: [],
+			currentIndex: ''
+		}
 	}
 
-	openModal = (i) => {
+	openModal = (index) => {
 		this.setState({
 			modalRequest: true,
-			modalData: this.props.data[i],
-			currentIndex: i
+			modalData: this.props.data[index],
+			currentIndex: index
 		})
 	}
 
@@ -45,8 +48,8 @@ export default class CardGallery extends Component {
 
 			<div id="gallery" className="gallery">
 
-				{this.props.data.map((item, i) => (
-					<div key={i} className="card" onClick={this.openModal.bind(this, i)}>
+				{this.props.data.map((item, index) => (
+					<div key={index} className="card" onClick={this.openModal.bind(this, index)}>
 						<div className="card-img-container">
 							<img className="card-img" src={item.picture.medium} alt="" />
 						</div>

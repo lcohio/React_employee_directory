@@ -9,8 +9,11 @@ import CardGallery from './components/CardGallery';
 
 export default class App extends Component {
 
-  state = {
-    employees: []
+  constructor() {
+    super()
+    this.state = {
+      employees: []
+    }
   }
 
   componentDidMount() {
