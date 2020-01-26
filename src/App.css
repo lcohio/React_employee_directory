@@ -2,7 +2,7 @@
    Public API Request Styles
 ======================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -16,7 +16,7 @@ html, body {
 body {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    background: rgba(144, 191, 222, .9);
+    background: #c3ebb0;
 }
 
 header {
